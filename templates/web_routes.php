@@ -4,13 +4,9 @@
  * Lemonade project->web routes basic file
  *
  * */
-require "../lemon/framework.php";
 
-/*
- *
- * Basic main page
- *
- * */
+
+// Basic web page
 Route::get('/', function() {
     echo "Welcome to Lemon!";
 });
