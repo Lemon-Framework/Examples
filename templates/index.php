@@ -10,8 +10,10 @@
  *
  * */
 
-require __DIR__ . "/../../lemon/framework.php";
+require __DIR__ . "/../lemon/framework.php";
 require __DIR__ . "/../routes/web.php";
+
+use Lemon\Routing\Route;
 
 /*
  *
