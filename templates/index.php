@@ -11,18 +11,18 @@
  * */
 
 require __DIR__ . "/../lemon/framework.php";
-require __DIR__ . "/../routes/web.php";
+require __DIR__ . "/../lemon/kernel/loader.php";
 
 use Lemon\Routing\Route;
+use Lemon\Kernel;
 
 /*
  *
- * Registering routes from routes file
- *
- * To register from other files, you need to require that file and type same method with different variable name
+ * Loading route files from routes folder
  *
  * */
-Route::registerRoutes($web_routes);
+Lemon\Kernel\loader();
+
 
 /*
  *
