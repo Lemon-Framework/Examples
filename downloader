@@ -20,6 +20,12 @@ echo ""
 
 name="lemon_example"
 
+if [ -d "$name" ];
+then
+    echo -e "${RED}Folder '$name' already exist! ${END}"
+    exit 1
+fi
+
 # Downloading
 echo -e "${YELLOW}Building project in '$name' folder...${END}"
 echo ""
