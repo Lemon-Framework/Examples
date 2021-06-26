@@ -4,7 +4,6 @@
  * Lemonade project->web routes basic file
  *
  * */
-use Lemon\Routing\Route;
 
 // Basic web page
 Route::get('/', function() {

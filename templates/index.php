@@ -10,18 +10,15 @@
  *
  * */
 
-require __DIR__ . "/../lemon/framework.php";
-require __DIR__ . "/../lemon/kernel/loader.php";
+require __DIR__ . "/../vendor/autoload.php";
 
-use Lemon\Routing\Route;
-use Lemon\Kernel;
 
 /*
  *
  * Loading route files from routes folder
  *
  * */
-Lemon\Kernel\loader();
+loader(__DIR__);
 
 
 /*
