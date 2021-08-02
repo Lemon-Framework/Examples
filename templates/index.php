@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  *
  * Lemonade project->public folder
  *
@@ -8,24 +8,25 @@
  *
  * In this folder is started Lemonade development server
  *
- * */
+ */
 
 require __DIR__ . "/../vendor/autoload.php";
 
+ViewCompiler::setDirectory(__DIR__."/../views");
 
-/*
+/**
  *
  * Loading route files from routes folder
  *
- * */
-loader(__DIR__);
+ */
+loader(__DIR__."/../routes");
 
 
-/*
+/**
  *
  * Executing routes
  *
- * */
+ */
 Route::execute();
 
 ?>
