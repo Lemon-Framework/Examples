@@ -2,31 +2,18 @@
 
 /**
  *
- * Lemonade project->public folder
+ * Lemon Framework
  *
- * This file registers all routes and executes them.
+ * This file takes all requests and returns valid response using the booter.php
  *
- * In this folder is started Lemonade development server
  *
  */
 
 require __DIR__ . "/../vendor/autoload.php";
 
-ViewCompiler::setDirectory(__DIR__."/../views");
+$app = require __DIR__ . "/../booter.php";
 
-/**
- *
- * Loading route files from routes folder
- *
- */
-loader(__DIR__."/../routes");
+$app->boot();
 
-
-/**
- *
- * Executing routes
- *
- */
-Route::execute();
 
 ?>
