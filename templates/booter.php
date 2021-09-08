@@ -11,8 +11,8 @@ $app = new Application(__DIR__);
  * Setting folders to load
  */
 $app->load(
-    "routes",
-    "app"
+    "app",
+    "routes"
     // Here you can type other folders that will be required
 );
 
